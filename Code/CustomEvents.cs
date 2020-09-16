@@ -8,13 +8,13 @@ using BrokeProtocol.Managers;
 using BrokeProtocol.Required;
 using UnityEngine;
 
-namespace uwu
+namespace DamageTriggers
 {
     public class CustomEvents : IScript
     {
         public List<ShPlayer> PlayersInTheTriggerBox { get; set; } = new List<ShPlayer>();
         [CustomTarget]
-        public void EnterHypothermia(ShPhysical physical, string triggerid) //The enter event, "Enter", can be modified. More info on Readme (Github).
+        public void Enter(ShPhysical physical, string triggerid) //The enter event, "Enter", can be modified. More info on Readme (Github).
         {
             if (physical is ShPlayer player)
             {
@@ -23,7 +23,7 @@ namespace uwu
         }
 
         [CustomTarget]
-        public void ExitHypothermia(ShPhysical physical, string triggerid) //The exit event, "Exit", can be modified. More info on Readme (Github). 
+        public void Exit(ShPhysical physical, string triggerid) //The exit event, "Exit", can be modified. More info on Readme (Github). 
         {
             if (physical is ShPlayer player)
             {
@@ -44,7 +44,7 @@ namespace uwu
                 {
                     player.svPlayer.Damage(DamageIndex.Null, 10, null, null); //The parameter "10" can be modified, remember that the health of a player is 100
                 }
-                yield return new WaitForSeconds(2); //Can be modified, change the number inside of the parenthesis. 
+                yield return new WaitForSeconds(30); //Can be modified, change the number inside of the parenthesis. 
             }
         }
 
