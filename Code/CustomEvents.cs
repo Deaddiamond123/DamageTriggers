@@ -31,7 +31,7 @@ namespace DamageTriggers
             }
         }
 
-        [Target(GameSourceEvent.ManagerStart, ExecutionMode.Override)]
+        [Target(GameSourceEvent.ManagerStart, ExecutionMode.Event)]
         public void OnStart(SvManager svManager) 
         {
             svManager.StartCoroutine(Whatever());
