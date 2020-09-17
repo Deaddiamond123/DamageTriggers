@@ -11,5 +11,8 @@ Same applies for Exit.
 
 The DamageIndex can be modified, the interval of seconds between each time it hurts the player too. 
 
+You need to specify the Enter Event and Exit Event on World Builder, so as default, you would have to put "Enter" on Enter Event, and "Exit" on Exit Event. 
+When modifying the name of the Enter Event/Exit Event, you'll have to change the name in Enter/Exit Event on the World Builder, so let's think you changed "Enter"/"Exit" to "Entrance"/"Execution", instead of "Enter" in Enter Event on the World Builder, you will have to write "Entrance", and "Execution" instead of "Exit". 
+
 If you need help with anything, you can just contact me by Discord (Deaddiamond123#5065).
 Enjoy!
